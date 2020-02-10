@@ -8,18 +8,78 @@
 
 import UIKit
 import CoreData
-
+import Alamofire
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    let client_id = "86e8aae4ffa01d902628937eb1d491a2d4175419c51f7c116ad8bf148c5df831"
+    let client_secret = "e56338cb38aff2c6f98a190152c7746bd4d0c591bef7541179d8af749d2f84b8"
+    let redirect_uri = "pinterestUnsplash://returnAfterLogin"
+    typealias JSONStandard = [String: AnyObject]
+    let userDefault = UserDefaults()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        if !userDefault.bool(forKey: "isLogged"){
+            window?.rootViewController = ViewController()
+        }else{
+            let mainPageNav = UINavigationController(rootViewController: mainPage())
+            window?.rootViewController = mainPageNav
+        }
         return true
     }
 
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        debugPrint(url.absoluteString)
+        let urlComponents = NSURLComponents(url: url as URL, resolvingAgainstBaseURL: false)
+        let items = (urlComponents?.queryItems)! as [NSURLQueryItem]
+        if url.scheme == "pinterestunsplash"{
+            if let propertyName = items.first?.name, let propertyValue = items.first?.value{
+                if propertyName == "code"{
+                    let url = "https://unsplash.com/oauth/token"
+                    let param: Parameters = [
+                        "client_id" : client_id,
+                        "client_secret": client_secret,
+                        "redirect_uri": redirect_uri,
+                        "code": propertyValue,
+                        "grant_type": "authorization_code"
+                    ]
+                    Alamofire.request(url, method: .post, parameters: param, headers: nil).responseJSON { (response) in
+                        guard let data = response.data else {
+                            debugPrint("Unsuccessful to get the user data")
+                            return
+                        }
+                        self.parseData(data: data)
+                    }
+                }
+            }
+        }
+        return true
+    }
+    
+    func parseData(data: Data){
+        do{
+            guard let myData = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? JSONStandard else { return }
+            if let accesToken = myData["access_token"] as? String{
+                print(accesToken)
+                
+                userDefault.set(true, forKey: "isLogged")
+                userDefault.set(accesToken, forKey: "access_token")
+                userDefault.synchronize()
+                let mainPageNav = UINavigationController(rootViewController: mainPage())
+                window?.rootViewController = mainPageNav
+            }
+        }catch let err{
+            print(err.localizedDescription)
+            return
+        }
+    }
+    
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

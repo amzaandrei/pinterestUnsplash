@@ -7,19 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E50B29E42093459A004141BB /* mainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50B29E32093459A004141BB /* mainPage.swift */; };
+		E50B29E620936891004141BB /* pinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50B29E520936891004141BB /* pinterestLayout.swift */; };
+		E50B29E820936942004141BB /* userProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50B29E720936942004141BB /* userProfilePage.swift */; };
+		E50B29EA20936B91004141BB /* structFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50B29E920936B91004141BB /* structFiles.swift */; };
+		E57D2DF02095A07000CC72F9 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57D2DEF2095A07000CC72F9 /* Reachability.swift */; };
+		E5D3FE1B20A74FB100AD7B5C /* userPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D3FE1A20A74FB100AD7B5C /* userPage.swift */; };
+		E5DF1F5220960BBA00590ECC /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DF1F5120960BBA00590ECC /* extension.swift */; };
+		E5DF1F542096499800590ECC /* presentImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DF1F532096499800590ECC /* presentImageViewController.swift */; };
 		E5EC3E1F209339380014A5CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EC3E1E209339380014A5CE /* AppDelegate.swift */; };
 		E5EC3E21209339380014A5CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EC3E20209339380014A5CE /* ViewController.swift */; };
-		E5EC3E24209339380014A5CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EC3E22209339380014A5CE /* Main.storyboard */; };
 		E5EC3E27209339380014A5CE /* pinterestUnsplash.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5EC3E25209339380014A5CE /* pinterestUnsplash.xcdatamodeld */; };
 		E5EC3E292093393B0014A5CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5EC3E282093393B0014A5CE /* Assets.xcassets */; };
 		E5EC3E2C2093393B0014A5CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EC3E2A2093393B0014A5CE /* LaunchScreen.storyboard */; };
+		ED30FBCEAF5390A1ACDCCFFB /* Pods_pinterestUnsplash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064CB1F76F48153445BE1FC1 /* Pods_pinterestUnsplash.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		064CB1F76F48153445BE1FC1 /* Pods_pinterestUnsplash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pinterestUnsplash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B8EE17B6F06B97DDC531359 /* Pods-pinterestUnsplash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinterestUnsplash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pinterestUnsplash/Pods-pinterestUnsplash.debug.xcconfig"; sourceTree = "<group>"; };
+		B43A72E5D0742130C9470E35 /* Pods-pinterestUnsplash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinterestUnsplash.release.xcconfig"; path = "Pods/Target Support Files/Pods-pinterestUnsplash/Pods-pinterestUnsplash.release.xcconfig"; sourceTree = "<group>"; };
+		E50B29E32093459A004141BB /* mainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPage.swift; sourceTree = "<group>"; };
+		E50B29E520936891004141BB /* pinterestLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = pinterestLayout.swift; path = "../../Pintereset Unsplash/Pintereset Unsplash/pinterestLayout.swift"; sourceTree = "<group>"; };
+		E50B29E720936942004141BB /* userProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userProfilePage.swift; sourceTree = "<group>"; };
+		E50B29E920936B91004141BB /* structFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = structFiles.swift; sourceTree = "<group>"; };
+		E57D2DEF2095A07000CC72F9 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		E5D3FE1A20A74FB100AD7B5C /* userPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userPage.swift; sourceTree = "<group>"; };
+		E5DF1F5120960BBA00590ECC /* extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		E5DF1F532096499800590ECC /* presentImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presentImageViewController.swift; sourceTree = "<group>"; };
 		E5EC3E1B209339380014A5CE /* pinterestUnsplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pinterestUnsplash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5EC3E1E209339380014A5CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5EC3E20209339380014A5CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E5EC3E23209339380014A5CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5EC3E26209339380014A5CE /* pinterestUnsplash.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pinterestUnsplash.xcdatamodel; sourceTree = "<group>"; };
 		E5EC3E282093393B0014A5CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5EC3E2B2093393B0014A5CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,17 +49,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED30FBCEAF5390A1ACDCCFFB /* Pods_pinterestUnsplash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A521E88B9A8D531949B2195 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				064CB1F76F48153445BE1FC1 /* Pods_pinterestUnsplash.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E5EC3E12209339380014A5CE = {
 			isa = PBXGroup;
 			children = (
 				E5EC3E1D209339380014A5CE /* pinterestUnsplash */,
 				E5EC3E1C209339380014A5CE /* Products */,
+				E6150BF569095197B3C1A29C /* Pods */,
+				3A521E88B9A8D531949B2195 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +86,30 @@
 			isa = PBXGroup;
 			children = (
 				E5EC3E1E209339380014A5CE /* AppDelegate.swift */,
+				E5DF1F5120960BBA00590ECC /* extension.swift */,
+				E5DF1F532096499800590ECC /* presentImageViewController.swift */,
+				E57D2DEF2095A07000CC72F9 /* Reachability.swift */,
+				E50B29E920936B91004141BB /* structFiles.swift */,
 				E5EC3E20209339380014A5CE /* ViewController.swift */,
-				E5EC3E22209339380014A5CE /* Main.storyboard */,
+				E50B29E32093459A004141BB /* mainPage.swift */,
+				E5D3FE1A20A74FB100AD7B5C /* userPage.swift */,
+				E50B29E720936942004141BB /* userProfilePage.swift */,
+				E50B29E520936891004141BB /* pinterestLayout.swift */,
 				E5EC3E282093393B0014A5CE /* Assets.xcassets */,
 				E5EC3E2A2093393B0014A5CE /* LaunchScreen.storyboard */,
 				E5EC3E2D2093393B0014A5CE /* Info.plist */,
 				E5EC3E25209339380014A5CE /* pinterestUnsplash.xcdatamodeld */,
 			);
 			path = pinterestUnsplash;
+			sourceTree = "<group>";
+		};
+		E6150BF569095197B3C1A29C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B8EE17B6F06B97DDC531359 /* Pods-pinterestUnsplash.debug.xcconfig */,
+				B43A72E5D0742130C9470E35 /* Pods-pinterestUnsplash.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5EC3E302093393B0014A5CE /* Build configuration list for PBXNativeTarget "pinterestUnsplash" */;
 			buildPhases = (
+				B7EFFF2DB855D81442EDB9A4 /* [CP] Check Pods Manifest.lock */,
 				E5EC3E17209339380014A5CE /* Sources */,
 				E5EC3E18209339380014A5CE /* Frameworks */,
 				E5EC3E19209339380014A5CE /* Resources */,
+				A21A37BC48B271EF2CA3B44D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +174,51 @@
 			files = (
 				E5EC3E2C2093393B0014A5CE /* LaunchScreen.storyboard in Resources */,
 				E5EC3E292093393B0014A5CE /* Assets.xcassets in Resources */,
-				E5EC3E24209339380014A5CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A21A37BC48B271EF2CA3B44D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-pinterestUnsplash/Pods-pinterestUnsplash-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pinterestUnsplash/Pods-pinterestUnsplash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7EFFF2DB855D81442EDB9A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pinterestUnsplash-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E5EC3E17209339380014A5CE /* Sources */ = {
@@ -139,22 +226,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5EC3E21209339380014A5CE /* ViewController.swift in Sources */,
+				E50B29E42093459A004141BB /* mainPage.swift in Sources */,
+				E50B29EA20936B91004141BB /* structFiles.swift in Sources */,
+				E5DF1F5220960BBA00590ECC /* extension.swift in Sources */,
 				E5EC3E27209339380014A5CE /* pinterestUnsplash.xcdatamodeld in Sources */,
+				E50B29E620936891004141BB /* pinterestLayout.swift in Sources */,
 				E5EC3E1F209339380014A5CE /* AppDelegate.swift in Sources */,
+				E57D2DF02095A07000CC72F9 /* Reachability.swift in Sources */,
+				E50B29E820936942004141BB /* userProfilePage.swift in Sources */,
+				E5DF1F542096499800590ECC /* presentImageViewController.swift in Sources */,
+				E5D3FE1B20A74FB100AD7B5C /* userPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E5EC3E22209339380014A5CE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E5EC3E23209339380014A5CE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E5EC3E2A2093393B0014A5CE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,11 +369,13 @@
 		};
 		E5EC3E312093393B0014A5CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B8EE17B6F06B97DDC531359 /* Pods-pinterestUnsplash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GDW2A22A3S;
 				INFOPLIST_FILE = pinterestUnsplash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +389,13 @@
 		};
 		E5EC3E322093393B0014A5CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B43A72E5D0742130C9470E35 /* Pods-pinterestUnsplash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GDW2A22A3S;
 				INFOPLIST_FILE = pinterestUnsplash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

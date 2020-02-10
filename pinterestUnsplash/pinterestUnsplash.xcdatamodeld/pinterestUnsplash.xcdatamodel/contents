@@ -1,4 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17E202" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="UserEntity" representedClassName="UserEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photos" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="userLinks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="UserLinksEntity" inverseName="user" inverseEntity="UserLinksEntity" syncable="YES"/>
+        <relationship name="userPhotoLikes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="UserPhotoLikes" inverseName="userRel" inverseEntity="UserPhotoLikes" syncable="YES"/>
+    </entity>
+    <entity name="UserFollowers" representedClassName="UserFollowers" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profileImaes" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UserLinksEntity" representedClassName="UserLinksEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="followers" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="following" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="likes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="me" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photos" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserEntity" inverseName="userLinks" inverseEntity="UserEntity" syncable="YES"/>
+        <relationship name="userProfileImage" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="UserProfileImageEntity" inverseName="userLinks" inverseEntity="UserProfileImageEntity" syncable="YES"/>
+    </entity>
+    <entity name="UserPhotoLikes" representedClassName="UserPhotoLikes" syncable="YES" codeGenerationType="class">
+        <attribute name="height" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="likes" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="thumbImage" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="width" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="userRel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserEntity" inverseName="userPhotoLikes" inverseEntity="UserEntity" syncable="YES"/>
+    </entity>
+    <entity name="UserPhotosEntity" representedClassName="UserPhotosEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="images" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="UserProfileImageEntity" representedClassName="UserProfileImageEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="large" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="medium" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="small" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="userLinks" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserLinksEntity" inverseName="userProfileImage" inverseEntity="UserLinksEntity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="UserEntity" positionX="-306" positionY="-207" width="128" height="133"/>
+        <element name="UserLinksEntity" positionX="-119" positionY="-72" width="128" height="148"/>
+        <element name="UserPhotoLikes" positionX="-63" positionY="-270" width="128" height="148"/>
+        <element name="UserPhotosEntity" positionX="153" positionY="-186" width="128" height="60"/>
+        <element name="UserProfileImageEntity" positionX="153" positionY="86" width="128" height="103"/>
+        <element name="UserFollowers" positionX="-99" positionY="-117" width="128" height="105"/>
+    </elements>
 </model>
